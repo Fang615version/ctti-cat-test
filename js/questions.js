@@ -1,13 +1,13 @@
-// CTTI 猫咪人格测试 - 题目数据（v5 统一格式）
+// CTTI 猫咪人格测试 - 题目数据（v6 优化版）
 const questions = [
   // 神经质 B/T (题1-4)
   {
     id: 1,
-    text: '带你家猫去医院，医生伸手抱它的时候：',
+    text: '你家猫第一次见到扫地机器人，它：',
     options: [
-      { text: '无所谓，任由摆布', score: 'B' },
-      { text: '用眼神审判了医生', score: null },
-      { text: '爪子抓住猫包边缘死不松手', score: 'T' }
+      { text: '凑上去闻一闻，跟着它走', score: 'B' },
+      { text: '先装死，确认安全后再继续睡', score: null },
+      { text: '还没开机就已经在衣柜顶上了', score: 'T' }
     ]
   },
   {
@@ -24,17 +24,17 @@ const questions = [
     text: '你打开吸尘器，你家猫：',
     options: [
       { text: '跑过来看你在吸什么', score: 'B' },
-      { text: '从睡梦中惊醒，瞪着你', score: null },
+      { text: '先装死，确认安全后再继续睡', score: null },
       { text: '你还没按开关它已经在天花板上了', score: 'T' }
     ]
   },
   {
     id: 4,
-    text: '搬家第一天，你家猫：',
+    text: '你家猫听到门外有陌生声音，它：',
     options: [
-      { text: '跳出来每个房间巡视一圈', score: 'B' },
-      { text: '死活不出猫包，决定和猫包结为终身伴侣', score: null },
-      { text: '缩在角落一动不动，过了半天才敢探头', score: 'T' }
+      { text: '走到门口闻一闻，想看看是谁', score: 'B' },
+      { text: '抬头听了一下，然后继续舔毛', score: null },
+      { text: '瞬间消失，三分钟后才从沙发底探出头', score: 'T' }
     ]
   },
   // 外向性 A/Q (题5-8)
@@ -77,11 +77,11 @@ const questions = [
   // 支配性 D/S (题9-12)
   {
     id: 9,
-    text: '你家猫和别的猫一起吃饭，它：',
+    text: '你家猫吃饭时的状态是：',
     options: [
-      { text: '先吃完自己的，再去抢别人的碗', score: 'D' },
-      { text: '安静吃自己的，偶尔偷瞄对方的粮', score: null },
-      { text: '别人来抢也不在意，甚至让开', score: 'S' }
+      { text: '风卷残云，吃完了还去检查别的角落有没有粮', score: 'D' },
+      { text: '慢慢吃，偶尔抬头看看你在干嘛', score: null },
+      { text: '不紧不慢，有人靠近也不护食', score: 'S' }
     ]
   },
   {
@@ -89,17 +89,17 @@ const questions = [
     text: '你家猫最喜欢的"王座"是：',
     options: [
       { text: '冰箱顶，居高临下俯视众生', score: 'D' },
-      { text: '你的电脑键盘，全家最重要的位置', score: null },
+      { text: '你的脑袋，它觉得这是它的坐垫', score: null },
       { text: '沙发上你旁边，挨着你就行', score: 'S' }
     ]
   },
   {
     id: 11,
-    text: '你从你家猫嘴里抢走它叼着的东西，它：',
+    text: '你家猫面对新来的纸箱或袋子，它：',
     options: [
-      { text: '立刻抢回来，顺便补你一口', score: 'D' },
-      { text: '从震惊到失望到心如死灰', score: null },
-      { text: '松嘴了，大眼睛无辜地看着你', score: 'S' }
+      { text: '必须第一个占领，别的猫别想靠近', score: 'D' },
+      { text: '先进去待一会儿，出来再进去待一会儿', score: null },
+      { text: '无所谓，你给它让位它才进去', score: 'S' }
     ]
   },
   {
@@ -107,7 +107,7 @@ const questions = [
     text: '你摸你家猫的时候，它：',
     options: [
       { text: '让你摸是恩赐，摸久了推你的手', score: 'D' },
-      { text: '只能摸头，摸肚子等于宣战', score: null },
+      { text: '摸两下开始呼噜，摸五下突然咬你', score: null },
       { text: '翻出肚皮，用爪子抱住你的手不让你停', score: 'S' }
     ]
   },
@@ -141,11 +141,11 @@ const questions = [
   },
   {
     id: 16,
-    text: '你觉得你家猫爱不爱你？',
+    text: '你半夜醒来发现你家猫在你旁边，它：',
     options: [
-      { text: '当然爱，每天都在证明', score: 'F' },
-      { text: '爱我，但含蓄到要看监控才发现', score: null },
-      { text: '不爱我，只爱罐头，我是开罐器', score: 'I' }
+      { text: '贴着你睡，发出呼噜声', score: 'F' },
+      { text: '看了你一眼，跳下床走了', score: null },
+      { text: '根本不在，它从来不在卧室睡', score: 'I' }
     ]
   },
   // 附加题（不计入维度分数，用于生成行为标签）
