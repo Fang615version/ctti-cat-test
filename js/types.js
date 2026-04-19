@@ -9,7 +9,7 @@ const catTypes = {
     ownerMessage: '你的猫选中了你当它的臣民，恭喜升职',
     tags: ['社牛', '精力爆表', '翻肚皮专业户'],
     traits: { neuroticism: 'B', extraversion: 'A', dominance: 'D', agreeableness: 'F' },
-    color: '#FF6B35'
+    color: '#E8987A'
   },
   BADI: {
     code: 'BADI',
@@ -20,7 +20,7 @@ const catTypes = {
     ownerMessage: '你的猫把你的睡眠当成了它的闹钟',
     tags: ['夜猫子', '跑酷选手', '踩脸狂魔'],
     traits: { neuroticism: 'B', extraversion: 'A', dominance: 'D', agreeableness: 'I' },
-    color: '#7B2FF7'
+    color: '#A88BDB'
   },
   BASF: {
     code: 'BASF',
@@ -31,7 +31,7 @@ const catTypes = {
     ownerMessage: '你在你猫心里的地位比猫粮还高',
     tags: ['粘人精', '呼噜机', '踩奶大师'],
     traits: { neuroticism: 'B', extraversion: 'A', dominance: 'S', agreeableness: 'F' },
-    color: '#58CC02'
+    color: '#7DB86A'
   },
   BASI: {
     code: 'BASI',
@@ -42,7 +42,7 @@ const catTypes = {
     ownerMessage: '你是全世界最耐心的听众',
     tags: ['话痨', '评论员', '自说自话'],
     traits: { neuroticism: 'B', extraversion: 'A', dominance: 'S', agreeableness: 'I' },
-    color: '#1CB0F6'
+    color: '#7CC4E8'
   },
   BQDF: {
     code: 'BQDF',
@@ -53,7 +53,7 @@ const catTypes = {
     ownerMessage: '你的猫允许你住在它的房子里，感恩吧',
     tags: ['霸道总裁', '高处控', '压醒服务'],
     traits: { neuroticism: 'B', extraversion: 'Q', dominance: 'D', agreeableness: 'F' },
-    color: '#FFB800'
+    color: '#E5C96B'
   },
   BQDI: {
     code: 'BQDI',
@@ -64,7 +64,7 @@ const catTypes = {
     ownerMessage: '你的猫不在乎你？那你晚回家试试',
     tags: ['深沉', '独来独往', '默默守候'],
     traits: { neuroticism: 'B', extraversion: 'Q', dominance: 'D', agreeableness: 'I' },
-    color: '#6C7A89'
+    color: '#95A5A6'
   },
   BQSF: {
     code: 'BQSF',
@@ -75,7 +75,7 @@ const catTypes = {
     ownerMessage: '你的猫活成了你想要的样子',
     tags: ['瞌睡虫', '流动体质', '佛系'],
     traits: { neuroticism: 'B', extraversion: 'Q', dominance: 'S', agreeableness: 'F' },
-    color: '#A8E6CF'
+    color: '#B5D9C9'
   },
   BQSI: {
     code: 'BQSI',
@@ -86,7 +86,7 @@ const catTypes = {
     ownerMessage: '你家猫的品味：越贵越可疑，越破越爱',
     tags: ['纸箱控', '佛系探索', '淘宝达人'],
     traits: { neuroticism: 'B', extraversion: 'Q', dominance: 'S', agreeableness: 'I' },
-    color: '#DDA0DD'
+    color: '#CFAECF'
   },
   TADF: {
     code: 'TADF',
@@ -97,7 +97,7 @@ const catTypes = {
     ownerMessage: '你是全世界最称职的开罐器',
     tags: ['干饭王', '假装没吃饱', '翻垃圾桶'],
     traits: { neuroticism: 'T', extraversion: 'A', dominance: 'D', agreeableness: 'F' },
-    color: '#FF4757'
+    color: '#D98E8E'
   },
   TADI: {
     code: 'TADI',
@@ -108,7 +108,7 @@ const catTypes = {
     ownerMessage: '你的猫觉得你家装修方案需要重新考虑',
     tags: ['拆家王', '推桌狂魔', '纸巾杀手'],
     traits: { neuroticism: 'T', extraversion: 'A', dominance: 'D', agreeableness: 'I' },
-    color: '#FF6348'
+    color: '#D9A494'
   },
   TASF: {
     code: 'TASF',
@@ -119,7 +119,7 @@ const catTypes = {
     ownerMessage: '全世界它只信任你一个人，你赢了',
     tags: ['社恐', '只粘你', '蒸发术'],
     traits: { neuroticism: 'T', extraversion: 'A', dominance: 'S', agreeableness: 'F' },
-    color: '#FF9FF3'
+    color: '#D4A9CB'
   },
   TASI: {
     code: 'TASI',
@@ -130,7 +130,7 @@ const catTypes = {
     ownerMessage: '凌晨两点，你的猫在黑暗中守护着你',
     tags: ['隐身术', '深夜观察者', '独居侠'],
     traits: { neuroticism: 'T', extraversion: 'A', dominance: 'S', agreeableness: 'I' },
-    color: '#5F27CD'
+    color: '#8E79AD'
   },
   TQDF: {
     code: 'TQDF',
@@ -141,7 +141,7 @@ const catTypes = {
     ownerMessage: '别被它骗了，你不在家的时候它睡你枕头',
     tags: ['口嫌体正直', '监控拆穿', '高冷伪装'],
     traits: { neuroticism: 'T', extraversion: 'Q', dominance: 'D', agreeableness: 'F' },
-    color: '#54A0FF'
+    color: '#7FA8C4'
   },
   TQDI: {
     code: 'TQDI',
@@ -152,7 +152,7 @@ const catTypes = {
     ownerMessage: '你的猫在半夜研究你，这算是爱吧',
     tags: ['神秘猫', '深夜巡逻', '对视一秒'],
     traits: { neuroticism: 'T', extraversion: 'Q', dominance: 'D', agreeableness: 'I' },
-    color: '#2C3E50'
+    color: '#6B7D8D'
   },
   TQSF: {
     code: 'TQSF',
@@ -163,7 +163,7 @@ const catTypes = {
     ownerMessage: '你的猫用最轻的方式告诉你：我在乎你',
     tags: ['温柔', '无声陪伴', '手背余温'],
     traits: { neuroticism: 'T', extraversion: 'Q', dominance: 'S', agreeableness: 'F' },
-    color: '#C8D6E5'
+    color: '#B8C6D0'
   },
   TQSI: {
     code: 'TQSI',
@@ -174,6 +174,6 @@ const catTypes = {
     ownerMessage: '你的猫存在感为零，但少了它你睡不着',
     tags: ['存在感为零', '踩到才发现', '空气猫'],
     traits: { neuroticism: 'T', extraversion: 'Q', dominance: 'S', agreeableness: 'I' },
-    color: '#DFE6E9'
+    color: '#C8CED1'
   }
 };
