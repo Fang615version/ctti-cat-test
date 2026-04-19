@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="CTTI 猫咪人格测试 — 18道题，2分钟，测出你家猫是什么人格">
+  <meta name="share-title" content="CTTI 猫咪人格测试">
+  <title>CTTI 猫咪人格测试</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 首页 -->
+  <div id="page-home" class="page active">
+    <div class="home-logo">🐱</div>
+    <h1 class="home-title">CTTI 猫咪人格测试</h1>
+    <p class="home-subtitle">Cat Typological Trait Indicator</p>
+    <p class="home-desc">18道题，2分钟<br>测出你家猫是16种人格中的哪一种</p>
+    <p class="home-code">BADF · BADI · BASF · BASI<br>BQDF · BQDI · BQSF · BQSI<br>TADF · TADI · TASF · TASI<br>TQDF · TQDI · TQSF · TQSI</p>
+    <button id="btn-start" class="btn-primary">开始测试</button>
+  </div>
+
+  <!-- 答题页 -->
+  <div id="page-quiz" class="page">
+    <div class="progress-container">
+      <div class="progress-bar-bg">
+        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+      </div>
+      <div id="progress-text" class="progress-text">1 / 18</div>
+    </div>
+    <div class="question-container">
+      <div id="question-title" class="question-number">第1题</div>
+      <div id="question-text" class="question-text"></div>
+      <div id="options" class="options"></div>
+    </div>
+  </div>
+
+  <!-- 结果页 -->
+  <div id="page-result" class="page">
+    <div class="result-header">
+      <span id="result-emoji" class="result-emoji">🐯</span>
+      <div id="result-name" class="result-name">霸王龙</div>
+      <div id="result-code" class="result-code">BADF</div>
+    </div>
+    <div class="result-body">
+      <div id="result-slogan" class="result-slogan">打遍小区无敌手，连狗都绕着走</div>
+      <div id="result-traits" class="result-traits"></div>
+      <div id="result-description" class="result-description"></div>
+      <div class="result-owner-card">
+        <div class="result-owner-label">给主人的话</div>
+        <div id="result-owner-message" class="result-owner-message"></div>
+      </div>
+      <div id="result-tags" class="result-tags"></div>
+      <div class="result-actions">
+        <button id="btn-share" class="btn-primary">保存结果卡片</button>
+        <button id="btn-restart" class="btn-secondary">再测一次</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/types.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
