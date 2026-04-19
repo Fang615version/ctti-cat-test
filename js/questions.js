@@ -1,9 +1,9 @@
-// CTTI 猫咪人格测试 - 题目数据
+// CTTI 猫咪人格测试 - 题目数据（v5 统一格式）
 const questions = [
   // 神经质 B/T (题1-4)
   {
     id: 1,
-    text: '带猫去医院，医生伸手抱它，它：',
+    text: '带你家猫去医院，医生伸手抱它的时候：',
     options: [
       { text: '无所谓，任由摆布', score: 'B' },
       { text: '用眼神审判了医生', score: null },
@@ -12,44 +12,44 @@ const questions = [
   },
   {
     id: 2,
-    text: '朋友第一次来家里，你的猫：',
+    text: '朋友第一次来你家做客，你家猫：',
     options: [
       { text: '凑过去闻鞋蹭腿打招呼', score: 'B' },
-      { text: '远处坐着，用写轮眼对客人进行灵魂审查', score: null },
+      { text: '远处坐着，用写轮眼对客人灵魂审查', score: null },
       { text: '客人还没坐下，已经消失在床底', score: 'T' }
     ]
   },
   {
     id: 3,
-    text: '你打开吸尘器，你的猫：',
+    text: '你打开吸尘器，你家猫：',
     options: [
       { text: '跑过来看你在吸什么', score: 'B' },
-      { text: '从睡梦中惊醒瞪着你', score: null },
+      { text: '从睡梦中惊醒，瞪着你', score: null },
       { text: '你还没按开关它已经在天花板上了', score: 'T' }
     ]
   },
   {
     id: 4,
-    text: '搬家第一天，你的猫：',
+    text: '搬家第一天，你家猫：',
     options: [
       { text: '跳出来每个房间巡视一圈', score: 'B' },
       { text: '死活不出猫包，决定和猫包结为终身伴侣', score: null },
-      { text: '死活不出猫包，选择与猫包共生', score: 'T' }
+      { text: '缩在角落一动不动，过了半天才敢探头', score: 'T' }
     ]
   },
   // 外向性 A/Q (题5-8)
   {
     id: 5,
-    text: '凌晨三点你被响声惊醒，是：',
+    text: '凌晨三点你被响声惊醒，你家猫在：',
     options: [
-      { text: '猫在客厅全速跑酷，刚从冰箱顶跳上窗帘', score: 'A' },
-      { text: '猫打哈欠翻身，碰倒了你的水杯', score: null },
-      { text: '不是猫，猫在你脚边睡成一条围巾', score: 'Q' }
+      { text: '客厅全速跑酷，刚从冰箱顶跳上窗帘', score: 'A' },
+      { text: '打哈欠翻身，碰倒了你的水杯', score: null },
+      { text: '你脚边睡成一条围巾，根本没动过', score: 'Q' }
     ]
   },
   {
     id: 6,
-    text: '花了80块买新玩具，你的猫：',
+    text: '你花了80块给自家猫买新玩具，它：',
     options: [
       { text: '没拆包装就扑上去了', score: 'A' },
       { text: '玩了三分钟，开始玩装玩具的塑料袋', score: null },
@@ -58,26 +58,26 @@ const questions = [
   },
   {
     id: 7,
-    text: '你下班推开门，看到：',
+    text: '你下班推开门，你家猫：',
     options: [
-      { text: '猫在半空中——刚从书架跳到沙发', score: 'A' },
-      { text: '猫在你枕头上，"你怎么又回来了"', score: null },
-      { text: '猫在早上那个位置，姿势都没换过', score: 'Q' }
+      { text: '在半空中——刚从书架跳到沙发上', score: 'A' },
+      { text: '在你枕头上，一脸"你怎么又回来了"', score: null },
+      { text: '在早上那个位置，姿势都没换过', score: 'Q' }
     ]
   },
   {
     id: 8,
-    text: '你的猫一天的最大运动量是：',
+    text: '你家猫一天里最大的运动量是：',
     options: [
       { text: '追苍蝇跑遍全家，飞上冰箱一巴掌拍死', score: 'A' },
-      { text: '从沙发走到猫爬架，看了一眼，又走回沙发', score: null },
+      { text: '从沙发走到猫爬架，看了一眼，又走回去', score: null },
       { text: '从沙发走到饭碗，再走回沙发', score: 'Q' }
     ]
   },
   // 支配性 D/S (题9-12)
   {
     id: 9,
-    text: '两只猫吃饭，你的猫：',
+    text: '你家猫和别的猫一起吃饭，它：',
     options: [
       { text: '先吃完自己的，再去抢别人的碗', score: 'D' },
       { text: '安静吃自己的，偶尔偷瞄对方的粮', score: null },
@@ -86,7 +86,7 @@ const questions = [
   },
   {
     id: 10,
-    text: '你的猫的"王座"是：',
+    text: '你家猫最喜欢的"王座"是：',
     options: [
       { text: '冰箱顶，居高临下俯视众生', score: 'D' },
       { text: '你的电脑键盘，全家最重要的位置', score: null },
@@ -95,7 +95,7 @@ const questions = [
   },
   {
     id: 11,
-    text: '你从猫嘴里抢走它叼着的东西，它：',
+    text: '你从你家猫嘴里抢走它叼着的东西，它：',
     options: [
       { text: '立刻抢回来，顺便补你一口', score: 'D' },
       { text: '从震惊到失望到心如死灰', score: null },
@@ -104,9 +104,9 @@ const questions = [
   },
   {
     id: 12,
-    text: '你摸它的时候，它：',
+    text: '你摸你家猫的时候，它：',
     options: [
-      { text: '它让你摸是恩赐，摸久了推你手', score: 'D' },
+      { text: '让你摸是恩赐，摸久了推你的手', score: 'D' },
       { text: '只能摸头，摸肚子等于宣战', score: null },
       { text: '翻出肚皮，用爪子抱住你的手不让你停', score: 'S' }
     ]
@@ -114,16 +114,16 @@ const questions = [
   // 宜人性 F/I (题13-16)
   {
     id: 13,
-    text: '你回家开门那一刻：',
+    text: '你回家开门的那一刻，你家猫：',
     options: [
-      { text: '它已经在门口，绕着你的腿疯狂蹭', score: 'F' },
+      { text: '已经在门口，绕着你的腿疯狂蹭', score: 'F' },
       { text: '慢悠悠走过来，然后坐到饭碗旁边', score: null },
       { text: '在窗台回头看了你一眼，继续看窗外', score: 'I' }
     ]
   },
   {
     id: 14,
-    text: '你在电脑前工作，你的猫：',
+    text: '你在电脑前工作，你家猫：',
     options: [
       { text: '跳上来趴你键盘，拱你的手', score: 'F' },
       { text: '坐在你鼠标垫上，各过各的', score: null },
@@ -132,7 +132,7 @@ const questions = [
   },
   {
     id: 15,
-    text: '你抱起你的猫，它：',
+    text: '你抱起你家猫，它：',
     options: [
       { text: '靠在你肩上开始打呼噜', score: 'F' },
       { text: '勉强接受，三秒后开始扭动', score: null },
@@ -145,7 +145,7 @@ const questions = [
     options: [
       { text: '当然爱，每天都在证明', score: 'F' },
       { text: '爱我，但含蓄到要看监控才发现', score: null },
-      { text: '它不爱我，它只爱罐头，我是开罐器', score: 'I' }
+      { text: '不爱我，只爱罐头，我是开罐器', score: 'I' }
     ]
   },
   // 附加题（不计入维度分数，用于生成行为标签）
